@@ -1,0 +1,81 @@
+@import "tailwindcss";
+
+@layer base {
+  body {
+    font-family: 'DM Sans', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  }
+  h1, h2, h3, h4, h5, h6, .font-display {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+  }
+}
+
+/* Change the background color of the input text box */
+.chat-input, input[type="text"], textarea {
+    background-color: #f0f2f5; /* Change to your preferred hex/RGB color */
+    color: #333333;             /* Text color inside the inbox */
+}
+
+/* If you are styling the entire message bubble container or header */
+.chat-box-container {
+    background-color: #ffffff; /* Container background */
+}
+
+
+/* Leaflet Map Custom Styling */
+.leaflet-container {
+  font-family: 'DM Sans', sans-serif !important;
+  width: 100%;
+  height: 100%;
+}
+
+.leaflet-control-layers {
+  border-radius: 0.75rem !important;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.15) !important;
+  border: 1px solid rgba(226, 232, 240, 0.9) !important;
+  padding: 10px 14px !important;
+  font-size: 12px !important;
+  font-weight: 600 !important;
+  background: rgba(255, 255, 255, 0.96) !important;
+  backdrop-filter: blur(8px) !important;
+  color: #0f172a !important;
+}
+
+.leaflet-control-layers-base label,
+.leaflet-control-layers-overlays label {
+  margin-bottom: 5px !important;
+  cursor: pointer !important;
+  display: flex !important;
+  align-items: center !important;
+  gap: 6px !important;
+}
+
+.leaflet-control-layers-separator {
+  margin: 6px 0 !important;
+  border-top: 1px solid #e2e8f0 !important;
+}
+
+.custom-pin {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Pulse radar animation for live location tracker marker */
+@keyframes radar-pulse {
+  0% {
+    transform: scale(0.9);
+    opacity: 0.9;
+  }
+  70% {
+    transform: scale(2.2);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(2.4);
+    opacity: 0;
+  }
+}
+
+.radar-wave {
+  animation: radar-pulse 2s cubic-bezier(0.215, 0.61, 0.355, 1) infinite;
+}

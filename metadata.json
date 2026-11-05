@@ -1,0 +1,10 @@
+{
+  "name": "Remix CivicPulse — AI Civic Hazard \u0026 Live Location Tracker",
+  "description": "AI-powered civic hazard triage, real-time GPS location tracker with proximity safety alerts, duplicate complaint deduplication, and photo-proof resolution auditing for Visakhapatnam.",
+  "requestFramePermissions": [
+    "geolocation"
+  ],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
